@@ -1,9 +1,8 @@
 import unittest
 from sistema_bancario.conta import ContaBancaria
 
-
 class TesteContaBancaria(unittest.TestCase):
-    def configuracao(self):
+    def setUp(self):
         self.conta = ContaBancaria(123, "João", 500)
 
     def teste_deposito(self):
@@ -21,7 +20,6 @@ class TesteContaBancaria(unittest.TestCase):
     def teste_deposito_invalido(self):
         with self.assertRaises(ValueError):
             self.conta.depositar(-100)
-
 
 if __name__ == "__main__":
     unittest.main()

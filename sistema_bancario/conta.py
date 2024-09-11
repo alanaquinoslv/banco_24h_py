@@ -27,7 +27,7 @@ class ContaBancaria:
 
     def extrato(self):
         print(f"Extrato da conta de {self._dono} (Conta: {self._num_conta})")
-        for transacao in self.transacoes:
+        for transacao in self._transacoes:
             print(transacao)
         print(f"Saldo atual: {self._saldo}")
 
