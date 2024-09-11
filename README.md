@@ -6,7 +6,7 @@ Sistema bancário 24 horas baseado feito em Python, onde os usuários podem cria
 ## Instalação
 
 1. Clone o repositório.
-2. Instale dependências (se houver).
+2. Instale dependências.
 
 $ pip install -r requirements.txt
 
